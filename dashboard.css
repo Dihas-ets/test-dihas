@@ -1,0 +1,506 @@
+/*=========================================
+RESET
+=========================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f4f6f9;
+    display:flex;
+    color:#333;
+}
+
+/*=========================================
+SIDEBAR
+=========================================*/
+
+.sidebar{
+
+    width:260px;
+    min-height:100vh;
+    background:#5b1f24;
+    position:fixed;
+    left:0;
+    top:0;
+    color:#fff;
+    padding:30px 20px;
+
+}
+
+.logo{
+
+    text-align:center;
+    margin-bottom:50px;
+
+}
+
+.logo i{
+
+    font-size:50px;
+    color:#d4a03d;
+    margin-bottom:15px;
+
+}
+
+.logo h2{
+
+    font-size:28px;
+
+}
+
+.logo span{
+
+    color:#d4a03d;
+
+}
+
+.sidebar ul{
+
+    list-style:none;
+
+}
+
+.sidebar ul li{
+
+    margin-bottom:15px;
+
+}
+
+.sidebar ul li a{
+
+    display:flex;
+    align-items:center;
+    gap:15px;
+
+    text-decoration:none;
+    color:#fff;
+
+    padding:15px 18px;
+
+    border-radius:10px;
+
+    transition:.3s;
+
+}
+
+.sidebar ul li a:hover{
+
+    background:#7a2e35;
+
+}
+
+.sidebar ul li.active a{
+
+    background:#d4a03d;
+    color:#fff;
+
+}
+
+/*=========================================
+MAIN
+=========================================*/
+
+.main{
+
+    margin-left:260px;
+    width:calc(100% - 260px);
+    padding:35px;
+
+}
+
+/*=========================================
+HEADER
+=========================================*/
+
+header{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    margin-bottom:40px;
+
+}
+
+header h1{
+
+    color:#5b1f24;
+    margin-bottom:5px;
+
+}
+
+header p{
+
+    color:#777;
+
+}
+
+.profile{
+
+    display:flex;
+    align-items:center;
+    gap:15px;
+
+}
+
+.profile img{
+
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    object-fit:cover;
+    border:3px solid #d4a03d;
+
+}
+
+.profile span{
+
+    font-weight:600;
+
+}
+
+/*=========================================
+CARDS
+=========================================*/
+
+.cards{
+
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+
+    margin-bottom:45px;
+
+}
+
+.card{
+
+    background:#fff;
+
+    border-radius:18px;
+
+    padding:30px;
+
+    text-align:center;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.card i{
+
+    font-size:42px;
+
+    color:#d4a03d;
+
+    margin-bottom:15px;
+
+}
+
+.card h2{
+
+    font-size:35px;
+
+    color:#5b1f24;
+
+}
+
+.card p{
+
+    color:#777;
+
+    margin-top:8px;
+
+}
+
+/*=========================================
+TABLE
+=========================================*/
+
+.table-section{
+
+    background:#fff;
+
+    border-radius:18px;
+
+    padding:30px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    margin-bottom:40px;
+
+}
+
+.table-section h2{
+
+    color:#5b1f24;
+
+    margin-bottom:20px;
+
+}
+
+table{
+
+    width:100%;
+    border-collapse:collapse;
+
+}
+
+thead{
+
+    background:#5b1f24;
+    color:#fff;
+
+}
+
+th{
+
+    padding:16px;
+    text-align:left;
+
+}
+
+td{
+
+    padding:16px;
+
+    border-bottom:1px solid #eee;
+
+}
+
+tbody tr:hover{
+
+    background:#fafafa;
+
+}
+
+button{
+
+    background:#5b1f24;
+    color:white;
+
+    border:none;
+
+    padding:10px 18px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    background:#d4a03d;
+
+}
+
+.ok{
+
+    color:green;
+    font-weight:600;
+
+}
+
+.wait{
+
+    color:orange;
+    font-weight:600;
+
+}
+
+/*=========================================
+ACTIVITY
+=========================================*/
+
+.activity{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:30px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.activity h2{
+
+    color:#5b1f24;
+
+    margin-bottom:25px;
+
+}
+
+.activity-box{
+
+    padding:20px;
+
+    border-left:5px solid #d4a03d;
+
+    background:#fafafa;
+
+    border-radius:10px;
+
+    margin-bottom:20px;
+
+}
+
+.activity-box p{
+
+    font-weight:500;
+
+}
+
+.activity-box span{
+
+    font-size:14px;
+
+    color:#888;
+
+}
+
+/*=========================================
+SCROLLBAR
+=========================================*/
+
+::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#5b1f24;
+    border-radius:20px;
+
+}
+
+/*=========================================
+RESPONSIVE
+=========================================*/
+
+@media(max-width:1100px){
+
+.cards{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:900px){
+
+.sidebar{
+
+width:80px;
+
+padding:20px 10px;
+
+}
+
+.logo h2{
+
+display:none;
+
+}
+
+.logo i{
+
+font-size:35px;
+
+}
+
+.sidebar ul li a{
+
+justify-content:center;
+
+}
+
+.sidebar ul li a span{
+
+display:none;
+
+}
+
+.main{
+
+margin-left:80px;
+
+width:calc(100% - 80px);
+
+}
+
+}
+
+@media(max-width:768px){
+
+header{
+
+flex-direction:column;
+align-items:flex-start;
+gap:20px;
+
+}
+
+.cards{
+
+grid-template-columns:1fr;
+
+}
+
+table{
+
+display:block;
+overflow-x:auto;
+
+}
+
+}
+
+@media(max-width:500px){
+
+.main{
+
+padding:20px;
+
+}
+
+.table-section,
+.activity{
+
+padding:20px;
+
+}
+
+.card{
+
+padding:20px;
+
+}
+
+header h1{
+
+font-size:28px;
+
+}
+
+}
